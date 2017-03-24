@@ -78,9 +78,8 @@
        (wrap-dimension h ry)])))
 
 (defn cell-states-surrounding [env depth x y]
-  (vec
     (for [[rx ry] (wrapping-coords-surrounding env depth x y)]
-      (state-at env rx ry))))
+      (state-at env rx ry)))
 
 (defn count-alive-neighbors [neighbors]
   (->> neighbors
@@ -187,50 +186,3 @@
      [11 12]
      [12 11]
      [12 12]]))
-
-(def test-env
-  (let [dims [5 5]
-        rand-gen (g/new-rand-gen 99)
-        cell-states #{\A \B \C \D}
-        a #(set-state-at % %2 %3 (g/random-from-collection cell-states rand-gen))
-        env (->Enviroment
-              (dead-environment dims)
-              dims)]
-    ; Simple [5 5]
-    (-> env)
-
-
-
-
-    ; Stable shapes [25 25]
-    #_
-    (-> env
-        ; Blinker
-        (a 2 2)
-        (a 2 3)
-        (a 2 4)
-
-        ; Toad
-        (a 3 7)
-        (a 4 7)
-        (a 5 7)
-        (a 2 8)
-        (a 3 8)
-        (a 4 8)
-
-        ; Glider
-        (a 6 2)
-        (a 7 2)
-        (a 8 2)
-        (a 8 1)
-        (a 7 0)
-
-        ; Beacon
-        (a 9 9)
-        (a 9 10)
-        (a 10 9)
-        (a 10 10)
-        (a 11 11)
-        (a 11 12)
-        (a 12 11)
-        (a 12 12))))
