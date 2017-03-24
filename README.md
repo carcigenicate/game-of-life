@@ -4,33 +4,17 @@ FIXME: description
 
 ## Installation
 
-Download from http://example.com/FIXME.
+Run -main in either the text-main or quil-main. Settings (like board size) are hardcoded at the top of the main
 
-## Usage
+## Controls
 
-FIXME: explanation
+- Mouse to "draw" new cells
+- "-"/"+" to decrease/increase draw size
+- "n"/"m" to change the draw color
+- "c" to clear the screen
+- "r" to randomize the board
 
-    $ java -jar game-of-life-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2016 FIXME
+Copyright © 2017 Me
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
