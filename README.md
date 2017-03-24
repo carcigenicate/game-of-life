@@ -1,6 +1,11 @@
 # game-of-life
 
-FIXME: description
+Implementations of Conway's Game of Life.
+
+Ignoring the "broken" one, there are 2 versions.
+
+ - "Edmonton" is just a simple, colorless implementation. 0 player
+ - "Color" is the version with color. 1 player (see Controls)
 
 ## Installation
 
