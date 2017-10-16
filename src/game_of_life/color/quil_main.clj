@@ -13,7 +13,7 @@
 (def width 1500)
 (def height 1500)
 
-(def board-side-length 75)
+(def board-side-length 100)
 
 (def board-width board-side-length)
 (def board-height board-side-length)
